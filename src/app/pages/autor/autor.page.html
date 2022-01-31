@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Autor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let p of  publicaciones | async">
+    <ion-label >
+      <h2>{{ p.titulo }}</h2>
+      
+    </ion-label>
+  </ion-item>
+
+</ion-content>
