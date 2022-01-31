@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>abstract</ion-title>
+    <ion-title>Abstract</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item *ngFor="let p of  publicaciones | async">
+    <ion-label >
+      <h2>{{ p.abstract }}</h2>
+      
+    </ion-label>
+  </ion-item>
 
 </ion-content>
